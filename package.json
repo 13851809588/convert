@@ -1,0 +1,30 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8088",
+    "dev": "webpack-dev-server --progress --colors --port 8090"
+  },
+  "author": "yanjun",
+  "license": "ISC",
+  "devDependencies": {
+    "argv": "0.0.2",
+    "co": "^4.6.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.2.0",
+    "lei-stream": "^1.0.5",
+    "lodash": "^3.10.0",
+    "path": "^0.12.7",
+    "q": "^1.4.1",
+    "queue-fun": "^0.2.4",
+    "thunkify": "^2.1.2",
+    "webpack": "^1.12.15"
+  },
+  "dependencies": {
+    "echarts": "^3.1.10"
+  }
+}
